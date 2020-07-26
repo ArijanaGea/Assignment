@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="24132" started-at="2020-07-26T20:42:08 CEST" finished-at="2020-07-26T20:42:32 CEST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="24132" started-at="2020-07-26T20:42:08 CEST" finished-at="2020-07-26T20:42:32 CEST">
+      <class name="test.CreateWishlistTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CreateWishlistTest@a7e666]" name="setUp" is-config="true" duration-ms="12640" started-at="2020-07-26T20:42:08 CEST" finished-at="2020-07-26T20:42:21 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logIn()[pri:1, instance:test.CreateWishlistTest@a7e666]" name="logIn" duration-ms="5235" started-at="2020-07-26T20:42:21 CEST" finished-at="2020-07-26T20:42:26 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method status="PASS" signature="cretewishlist()[pri:2, instance:test.CreateWishlistTest@a7e666]" name="cretewishlist" duration-ms="5391" started-at="2020-07-26T20:42:26 CEST" finished-at="2020-07-26T20:42:31 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cretewishlist -->
+        <test-method status="PASS" signature="countwishlist()[pri:3, instance:test.CreateWishlistTest@a7e666]" name="countwishlist" duration-ms="35" started-at="2020-07-26T20:42:31 CEST" finished-at="2020-07-26T20:42:31 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countwishlist -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CreateWishlistTest@a7e666]" name="tearDown" is-config="true" duration-ms="748" started-at="2020-07-26T20:42:31 CEST" finished-at="2020-07-26T20:42:32 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.CreateWishlistTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
