@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -230,10 +231,11 @@ public class AccountTest {
 		Assert.assertEquals(home.getAuthenticationURL(), "http://automationpractice.com/index.php?controller=authentication&back=my-account", "User is not on correct page");;
 	}
 
-	@AfterClass
-	public void tearDown () {
-		CreateAccountPage home = new CreateAccountPage(driver);
-		home.tearDown();
+	@AfterTest
+	public void tearDown() {
+
+		driver.quit();
+
 	}
 }
 

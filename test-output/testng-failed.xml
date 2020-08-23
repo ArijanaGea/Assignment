@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.TC4Test">
+      <class name="test.DeleteWishlistTest">
         <methods>
-          <include name="addItem"/>
+          <include name="tearDown"/>
+          <include name="delete"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- test.TC4Test -->
+      </class> <!-- test.DeleteWishlistTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

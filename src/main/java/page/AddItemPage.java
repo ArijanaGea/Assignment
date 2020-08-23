@@ -24,15 +24,13 @@ public class AddItemPage {
 	private By blouselink = By.xpath("//*[@id=\"categories_block_left\"]/div/ul/li[1]/ul/li[2]/a");
 	private By blouseimg = By.xpath("//*[@id=\"center_column\"]/ul/li/div/div[2]/h5/a");
 	private By addItem = By.className("addToWishlist");
-	private By closeBox = By.className("fancybox-item");
-	private By accountBttn = By.className("account");
-	private By list= By.xpath("//*[@id=\"wishlist_22461\"]/td[1]/a");
+	
 	
 	
 	
 
-	private String emailinput = "tes83@gmail.com";
-	private String passwordinput = "sifra123";
+	private String emailinput = "tes123@gmail.com";
+	private String passwordinput = "1234sifra";
 
 	
 	public AddItemPage(WebDriver driver) {
@@ -74,24 +72,7 @@ public class AddItemPage {
         driver.findElement(addItem).click();
 
 	}
-	
-	public void checkWishlist() {
-		driver.findElement(accountBttn).click();
-		driver.findElement(wishlistBttn).click();
-		driver.findElement(list).click();
-		
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,800)", "");
-		
-		WebElement qty = driver.findElement(By.xpath("//*[@id=\"quantity_2_0\"]"));
 
-		String value = qty.getAttribute("value");
-		System.out.println("Number of items in Wish List: "+ value);
-	}
 
-	public void tearDown() {
-		driver.quit();
-		
-	}
 
 }

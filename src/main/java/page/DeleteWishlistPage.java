@@ -1,10 +1,7 @@
 package page;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class DeleteWishlistPage {
 	private WebDriver driver;
@@ -15,12 +12,10 @@ public class DeleteWishlistPage {
 	private By sigInBttn = By.id("SubmitLogin");
 	private By wishlistBttn = By.xpath("//*[@id=\"center_column\"]/div/div[2]/ul/li/a");
 
-	private By table = By.className("table");
-
 	private By deleteBttn = By.className("icon-remove");
 
-	private String emailinput = "tes83@gmail.com";
-	private String passwordinput = "sifra123";
+	private String emailinput = "tes123@gmail.com";
+	private String passwordinput = "1234sifra";
 
 	public DeleteWishlistPage(WebDriver driver) {
 		this.driver = driver;
@@ -40,14 +35,4 @@ public class DeleteWishlistPage {
 		driver.switchTo().alert().accept();
 	}
 
-	public void numberorows() {
-		List<WebElement> rows = driver.findElements(table);
-		int count = rows.size();
-		System.out.println("Numeber of rows: " + count);
-	}
-
-	public void tearDown() {
-		driver.quit();
-
-	}
 }

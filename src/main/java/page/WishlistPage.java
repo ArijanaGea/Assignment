@@ -19,13 +19,11 @@ public class WishlistPage {
 	private By inputfield = By.id("name");
 	private By saveBttn = By.id("submitWishlist");
 	
-	private By table = By.className("table");
-
-	private String emailinput ="tes83@gmail.com";
-	private String passwordinput = "sifra123";
-	private String wishlist1 ="new";
-	private String wishlist2 ="old";
-	private String wishlist3 ="phone";
+	private String emailinput ="tes123@gmail.com";
+	private String passwordinput = "1234sifra";
+	private String wishlist1 ="list" + Math.floor(Math.random() * 11111);
+	private String wishlist2 ="list" + Math.floor(Math.random() * 11111);
+	private String wishlist3 ="list" + Math.floor(Math.random() * 11111);
 	
 	
 
@@ -55,15 +53,6 @@ public class WishlistPage {
 
 	}
 	
-	public void numberorows() {
-		List<WebElement> rows = driver.findElements(table);
-		int count = rows.size();
-
-		System.out.println("Numeber of rows: " + count);
-	}
-	public void tearDown() {
-		driver.quit();
-		
-	}
+	
 
 }

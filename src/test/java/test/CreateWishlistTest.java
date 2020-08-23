@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -30,23 +31,18 @@ public class CreateWishlistTest {
 		WishlistPage home = new WishlistPage(driver);
 		home.Login();
 		}
+	
 	@Test(priority=2)
 		public void cretewishlist(){
 		WishlistPage home = new WishlistPage(driver);
 		home.createWishlist();
 	}
 	
-	@Test(priority=3)
-	public void countwishlist() {
-		WishlistPage home = new WishlistPage(driver);
-		home.numberorows();
-	}
-	
-	@AfterClass
-	public void tearDown () {
-		WishlistPage home = new WishlistPage(driver);
-		home.tearDown();
-	}
+	@AfterTest
+	public void tearDown() {
 
+		driver.quit();
+
+	}
 }
 
